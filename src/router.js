@@ -12,18 +12,22 @@ export default new VueRouter({
    routes: [
        {
            path: "/"
+           , name: 'Main'
            , component: Main
        }
        , {
            path: "/contentTypeA"
+           , name: 'ContentTypeA'
            , component: ContentTypeA
        }
        , {
            path: "/contentTypeB"
+           , name: 'ContentTypeB'
            , component: ContentTypeB
        }
        , {
            path: "/contentTypeC"
+           , name: 'ContentTypeC'
            , component: ContentTypeC
        }
    ]
