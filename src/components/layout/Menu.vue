@@ -15,26 +15,25 @@
 <style scoped>
 .menu {
   height: 100px;
-  text-align: center;
   border-bottom: 1px solid #ebebeb;
   display: flex;
+  justify-content: space-between;
 }
 .menu_left {
-  width: 100px;
+  width: 200px;
   line-height: 100px;
   text-align: center;
   border-right: 1px solid #ebebeb;
 }
 .menu_center {
-  width: 100%;
   line-height: 100px;
   text-align: center;
-  border-right: 1px solid #ebebeb;
 }
 .menu_right {
-  width: 300px;
+  width: 200px;
   line-height: 100px;
   text-align: center;
+  border-left: 1px solid #ebebeb;
 }
 </style>
 
