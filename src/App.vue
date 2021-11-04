@@ -16,6 +16,12 @@
     position: sticky;
     top: 0px;
   }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 </style>
 
 <script>
