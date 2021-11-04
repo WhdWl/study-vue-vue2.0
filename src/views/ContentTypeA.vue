@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Box :color="color"/>
     <Box color="blue"/>
     <Box color="purple"/>
     <Box color="green"/>
@@ -41,6 +42,11 @@ export default {
   name: 'ContentTypeA'
   , components: {
     Box
+  }
+  , data() {
+    return {
+      color: "blue"
+    }
   }
 }
 </script>

@@ -1,6 +1,7 @@
 <template>
-  <div v-bind:class="['box', color]" v-bind:style="{width: width + 'px', height: height + 'px'}"></div>
-<!--  <div class="box" :style="{width: width + 'px', height: height + 'px'}"></div>-->
+  <div v-bind:class="['box', color]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}"></div>
+<!--  <div v-bind:class="['box', color]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}"></div>-->
+<!--  <div :class="box" :style="{width: width + 'px', height: height + 'px'}"></div>-->
 </template>
 
 <style scoped>
@@ -27,8 +28,8 @@ export default {
       type: String
       , default: ""
     }
-  }
-  , data() {
+  },
+  data() {
     return {
       width: 300
       , height: 300
