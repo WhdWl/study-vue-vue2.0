@@ -6,8 +6,8 @@
 
 <style scoped>
 div {
-  height: 200px;
-  line-height: 200px;
+  height: 400px;
+  line-height: 400px;
   text-align: center;
   border-bottom: 1px solid #ebebeb;
 }
