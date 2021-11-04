@@ -1,18 +1,21 @@
 <template>
   <div>
+    banner
   </div>
 </template>
 
 <style scoped>
 div {
-  position: sticky;
-  height: 100px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
   border-bottom: 1px solid #ebebeb;
 }
 </style>
 
 <script>
+
 export default {
-  name: "Header.vue"
+  name: "Banner.vue"
 }
 </script>
