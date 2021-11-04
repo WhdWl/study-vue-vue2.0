@@ -6,13 +6,13 @@
 
 <style scoped>
 div {
-  height: 2000px;
   text-align: center;
+  height:2000px;
 }
 </style>
 
 <script>
 export default {
-  name: "Main"
+  name: 'Main'
 }
 </script>

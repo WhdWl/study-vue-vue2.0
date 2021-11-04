@@ -8,7 +8,7 @@
 import Banner from './header/Banner.vue'
 
 export default {
-    name: "Header.vue"
+    name: 'Header'
   , components: {
     Banner
   }
