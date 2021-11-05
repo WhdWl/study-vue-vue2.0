@@ -1,5 +1,8 @@
 <template>
-  <div v-show="item.view" v-bind:class="['box', item.name]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}">N</div>
+  <div v-show="item.view" v-bind:class="['box', item.name]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}">
+    <h1>{{title}}</h1>
+    <input v-model="title">
+  </div>
 <!--  <div v-if="item.view" v-bind:class="['box', item.name]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}"></div>-->
 <!--  <div v-bind:class="['box', color]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}"></div>-->
 <!--  <div :class="box" :style="{width: width + 'px', height: height + 'px'}"></div>-->
@@ -41,6 +44,7 @@ export default {
     return {
       width: 300
       , height: 300
+      , title: 1
     }
   }
 }
