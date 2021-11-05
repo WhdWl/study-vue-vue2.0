@@ -3,8 +3,8 @@
     <div class="menu_left" @click="clickLogo">
       logo
     </div>
-    <div class="menu_center" @click="clickMenu">
-      menu
+    <div class="menu_center">
+      <Menu :menuMap="menuMap" v-for="(menuMap, idx) in menuList" :key="idx"/>
     </div>
     <div class="menu_right" @click="clickLogin">
       login
@@ -41,21 +41,39 @@
 </style>
 
 <script>
+import Menu from "@/components/layout/topBar/Menu";
+
 export default {
-  name: 'Menu'
+  name: 'TopBar'
+  , components: {
+    Menu
+  }
   , methods: {
     clickLogo() {
       this.$router.push({
         name: 'Main'
       });
     }
-    , clickMenu() {
-      this.$router.push({
-        name: 'ContentTypeA'
-      });
-    }
     , clickLogin() {
       alert('login');
+    }
+  }
+  , data() {
+    return {
+      menuList: [
+          {
+            menu_name: 'A'
+          , menu_num: 1
+        }
+        , {
+            menu_name: 'B'
+          , menu_num: 2
+        }
+        , {
+            menu_name: 'C'
+          , menu_num: 3
+        }
+      ]
     }
   }
 }

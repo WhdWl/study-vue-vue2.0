@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <div class="sticky">
-      <Menu/>
+      <TopBar/>
     </div>
     <div id="content" class="content">
       <router-view></router-view>
@@ -25,15 +25,15 @@
 </style>
 
 <script>
-import Header from './components/layout/Header.vue'
-import Menu from './components/layout/Menu.vue'
-import Footer from './components/layout/Footer.vue'
+import Header from '@/components/layout/Header.vue'
+import TopBar from '@/components/layout/TopBar.vue'
+import Footer from '@/components/layout/Footer.vue'
 
 export default {
   name: 'App'
   , components: {
       Header
-    , Menu
+    , TopBar
     , Footer
   }
 }
