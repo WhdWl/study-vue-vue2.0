@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:class="['box', color]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}"></div>
+  <div v-bind:class="['box', item.name]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}"></div>
 <!--  <div v-bind:class="['box', color]" v-bind:style="{'width': width + 'px', 'height': height + 'px'}"></div>-->
 <!--  <div :class="box" :style="{width: width + 'px', height: height + 'px'}"></div>-->
 </template>
@@ -25,8 +25,12 @@ export default {
   name: 'Box'
   , props: {
     color: {
-      type: String
-      , default: ""
+      type: String, default: ""
+    }
+    , item: {
+      name: {
+        type: String, default: ""
+      }
     }
   },
   data() {

@@ -1,18 +1,6 @@
 <template>
   <div>
-    <Box :color="color"/>
-    <Box color="blue"/>
-    <Box color="purple"/>
-    <Box color="green"/>
-    <Box/>
-    <Box color="blue"/>
-    <Box color="purple"/>
-    <Box color="green"/>
-    <Box/>
-    <Box color="blue"/>
-    <Box color="purple"/>
-    <Box color="green"/>
-    <Box/>
+    <Box :color="color" :item="item" v-for="(item, idx) in colors" :key="idx"/>
   </div>
 </template>
 
@@ -45,7 +33,18 @@ export default {
   }
   , data() {
     return {
-      color: "blue"
+        color: "blue"
+      , colors: [
+          {
+          name: "blue"
+        }
+        , {
+          name: "green"
+        }
+        , {
+          name: "purple"
+        }
+      ]
     }
   }
 }
