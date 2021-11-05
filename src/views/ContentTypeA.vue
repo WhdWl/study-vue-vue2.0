@@ -36,13 +36,16 @@ export default {
         color: "blue"
       , colors: [
           {
-          name: "blue"
+            name: "blue"
+          , view: true
         }
         , {
-          name: "green"
+            name: "green"
+          , view: false
         }
         , {
-          name: "purple"
+            name: "purple"
+          , view: true
         }
       ]
     }
