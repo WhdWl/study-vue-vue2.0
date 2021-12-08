@@ -1,26 +1,66 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header class="header"/>
     <div class="sticky">
-      <TopBar/>
+      <TopBar class="topBar"/>
     </div>
-    <div id="content" class="content">
+    <div class="content">
       <router-view></router-view>
     </div>
-    <Footer/>
+    <Footer class="footer"/>
   </div>
 </template>
 
 <style scoped>
+  #app {
+    width: 1152px;
+    /*1024*/
+    /*512*/
+    /*256*/
+    /*128*/
+    /*64*/
+    /*32*/
+    /*16*/
+    /*8*/
+    /*4*/
+    /*2*/
+    /*1*/
+    background-color: #fffff0;
+  }
+  .header {
+    border-top: 3px solid #036635;
+    border-left: 3px solid #036635;
+    border-right: 3px solid #036635;
+    height: 384px;
+    line-height: 384px;
+    text-align: center;
+  }
+  .topBar {
+    border-top: 3px solid #036635;
+    border-right: 3px solid #036635;
+    border-bottom: 3px solid #036635;
+    border-left: 3px solid #036635;
+    /*padding-bottom: 10px solid #036635;*/
+    /*margin-bottom: 10px solid #036635;*/
+    height: 64px;
+    line-height: 64px;
+  }
   .sticky {
     position: sticky;
     top: 0px;
   }
-
-  #app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .content {
+    border-left: 3px solid #036635;
+    border-right: 3px solid #036635;
+  }
+  .footer {
+    border-top: 3px solid #036635;
+    border-right: 3px solid #036635;
+    border-bottom: 3px solid #036635;
+    border-left: 3px solid #036635;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
   }
 </style>
 

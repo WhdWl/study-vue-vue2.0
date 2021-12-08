@@ -14,28 +14,27 @@
 
 <style scoped>
 .menu {
-  height: 100px;
-  border-bottom: 1px solid #ebebeb;
   display: flex;
   justify-content: space-between;
+  /*background-color: #000000;*/
 }
 .menu_left {
-  width: 200px;
-  line-height: 100px;
+  width: 128px;
   text-align: center;
-  border-right: 1px solid #ebebeb;
   cursor: pointer;
+  background-color: #000000;
+  margin: 0px 0px 0px 0px;
+  border: 0px solid ;
+  padding: 0px 0px 0px 0px;
 }
 .menu_center {
-  line-height: 100px;
-  text-align: center;
-  cursor: pointer;
+  width: 890px;
+  display: flex;
+  justify-content: space-around;
 }
 .menu_right {
-  width: 200px;
-  line-height: 100px;
+  width: 128px;
   text-align: center;
-  border-left: 1px solid #ebebeb;
   cursor: pointer;
 }
 </style>
@@ -62,16 +61,29 @@ export default {
     return {
       menuList: [
           {
-            menu_name: 'A'
+            menu_name: '메뉴1'
+          , menu_code: 'A'
           , menu_num: 1
         }
         , {
-            menu_name: 'B'
+            menu_name: '메뉴2'
+          , menu_code: 'B'
           , menu_num: 2
         }
         , {
-            menu_name: 'C'
+            menu_name: '메뉴3'
+          , menu_code: 'C'
           , menu_num: 3
+        }
+        , {
+          menu_name: '메뉴4'
+          , menu_code: 'D'
+          , menu_num: 4
+        }
+        , {
+          menu_name: '메뉴5'
+          , menu_code: 'E'
+          , menu_num: 5
         }
       ]
     }
