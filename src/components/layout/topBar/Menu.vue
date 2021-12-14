@@ -5,7 +5,6 @@
 
 <style scoped>
 div {
-  color: #fffff0;
   cursor: pointer;
 }
 </style>

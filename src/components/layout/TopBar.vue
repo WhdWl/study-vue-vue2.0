@@ -22,7 +22,6 @@
   width: 128px;
   text-align: center;
   cursor: pointer;
-  background-color: #000000;
   margin: 0px 0px 0px 0px;
   border: 0px solid ;
   padding: 0px 0px 0px 0px;

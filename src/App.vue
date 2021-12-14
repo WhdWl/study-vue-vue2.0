@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <Header class="header"/>
-    <div class="sticky">
-      <TopBar class="topBar"/>
-    </div>
+    <TopBar class="sticky topBar"/>
     <div class="content">
       <router-view></router-view>
     </div>
@@ -13,7 +11,7 @@
 
 <style scoped>
   #app {
-    width: 1152px;
+    width: 1152px; /*1024 + 128*/
     /*1024*/
     /*512*/
     /*256*/
@@ -25,42 +23,50 @@
     /*4*/
     /*2*/
     /*1*/
-    background-color: #fffff0;
   }
   .header {
-    border-top: 3px solid #036635;
-    border-left: 3px solid #036635;
-    border-right: 3px solid #036635;
+    /*border-top: 3px solid #036635;*/
+    /*border-left: 3px solid #036635;*/
+    /*border-right: 3px solid #036635;*/
     height: 384px;
     line-height: 384px;
     text-align: center;
+    margin-top: 10px;
+    background-color: #fffff0;
   }
   .topBar {
     border-top: 3px solid #036635;
-    border-right: 3px solid #036635;
+    /*border-right: 3px solid #036635;*/
     border-bottom: 3px solid #036635;
-    border-left: 3px solid #036635;
+    /*border-left: 3px solid #036635;*/
     /*padding-bottom: 10px solid #036635;*/
     /*margin-bottom: 10px solid #036635;*/
     height: 64px;
     line-height: 64px;
+    margin-top: 10px;
+    background-color: #fffff0;
   }
   .sticky {
     position: sticky;
     top: 0px;
   }
   .content {
-    border-left: 3px solid #036635;
-    border-right: 3px solid #036635;
+    margin-top: 10px;
+    /*border-left: 3px solid #036635;*/
+    /*border-right: 3px solid #036635;*/
+    background-color: #fffff0;
   }
   .footer {
-    border-top: 3px solid #036635;
-    border-right: 3px solid #036635;
-    border-bottom: 3px solid #036635;
-    border-left: 3px solid #036635;
+    /*border-top: 3px solid #036635;*/
+    /*border-right: 3px solid #036635;*/
+    /*border-bottom: 3px solid #036635;*/
+    /*border-left: 3px solid #036635;*/
     height: 200px;
     line-height: 200px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fffff0;
   }
 </style>
 

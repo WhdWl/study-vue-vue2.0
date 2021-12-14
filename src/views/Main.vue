@@ -1,13 +1,19 @@
 <template>
   <div>
-    main
+    <div class="main">
+      <span>asd</span>
+    </div>
+    <div class="main"></div>
+    <div class="main"></div>
   </div>
 </template>
 
 <style scoped>
-div {
+.main {
   text-align: center;
-  height:2000px;
+  height:300px;
+  margin-top: 10px;
+  background-color: #036635;
 }
 </style>
 
