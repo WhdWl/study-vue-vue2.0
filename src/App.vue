@@ -5,6 +5,7 @@
     <div class="content">
       <router-view></router-view>
     </div>
+    <BottomBar class="bottomBar"/>
     <Footer class="footer"/>
   </div>
 </template>
@@ -55,6 +56,13 @@
     /*border-left: 3px solid #036635;*/
     /*border-right: 3px solid #036635;*/
   }
+  .bottomBar {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #BFD17B;
+  }
   .footer {
     /*border-top: 3px solid #036635;*/
     /*border-right: 3px solid #036635;*/
@@ -70,15 +78,17 @@
 </style>
 
 <script>
-import Header from '@/components/layout/Header.vue'
-import TopBar from '@/components/layout/TopBar.vue'
-import Footer from '@/components/layout/Footer.vue'
+import Header    from '@/components/layout/Header.vue'
+import TopBar    from '@/components/layout/TopBar.vue'
+import BottomBar from '@/components/layout/BottomBar.vue'
+import Footer    from '@/components/layout/Footer.vue'
 
 export default {
   name: 'App'
   , components: {
       Header
     , TopBar
+    , BottomBar
     , Footer
   }
 }
