@@ -32,7 +32,7 @@
     line-height: 384px;
     text-align: center;
     margin-top: 10px;
-    background-color: #036635;
+    background-color: #BFD17B;
   }
   .topBar {
     border-top: 3px solid #036635;
@@ -65,7 +65,7 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #036635;
+    background-color: #BFD17B;
   }
 </style>
 
