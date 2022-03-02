@@ -25,6 +25,8 @@
   margin: 0px 0px 0px 0px;
   border: 0px solid ;
   padding: 0px 0px 0px 0px;
+  color: #5E055F;
+  font-weight: bold;
 }
 .menu_center {
   width: 890px;
