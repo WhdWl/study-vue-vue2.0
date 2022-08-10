@@ -55,7 +55,9 @@ export default {
       });
     }
     , clickLogin() {
-      alert('login');
+      this.$router.push({
+        name: 'ContentTypeC'
+      });
     }
   }
   , data() {
